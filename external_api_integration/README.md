@@ -22,7 +22,7 @@ pip install -r requirements.txt
 You can optionally add the following to your `.env` file:
 
 ```env
-WEATHER_ENV=real
+WEATHER_PROVIDER=real
 ```
 
 The decouple package will automatically load environment variables from the `.env` file, and if not found, it will use the default value which is `dummy`.
