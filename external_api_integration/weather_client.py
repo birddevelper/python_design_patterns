@@ -1,6 +1,6 @@
 # Singleton metaclass
 from weather_drivers import WeatherDriverFactory
-
+from config import AppConfig
 
 class SingletonMeta(type):
     _instances = {}
@@ -12,7 +12,8 @@ class SingletonMeta(type):
 
 # Singleton Client
 class WeatherClient(metaclass=SingletonMeta):
-    def __init__(self, provider):
+    def __init__(self):
+        provider = AppConfig.WEATHER_PROVIDER
         self.driver = WeatherDriverFactory.create_driver(provider)
 
     def get_weather(self):
