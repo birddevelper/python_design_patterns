@@ -1,6 +1,6 @@
 #  External Service Integration in Python
 
-This repository demonstrates a clean and extensible architecture for integrating external services in Python using well-established design patterns.
+This repository belongs to blog post on [Design Patterns in External API Integration in Python](https://mshaeri.com/blog/design-patterns-i-use-in-external-service-integration-in-python/) demonstrating a clean architecture for integrating external services in Python using well-established design patterns.
 
 
 ## Design Overview
